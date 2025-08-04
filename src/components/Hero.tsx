@@ -109,7 +109,34 @@ export const Hero: React.FC = () => {
           </a>
         </div>
       </div>
-
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 rtl:space-x-reverse animate-fadeInUp">
+          <a
+            href="#about-section"
+            onClick={(e) => {
+              e.preventDefault()
+              scrollToAbout()
+            }}
+            className="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-md font-medium transition-all duration-300 hover:scale-105 text-center shadow-lg shadow-green-600/30"
+          >
+            {t('explore_more')}
+          </a>
+          <a
+            href="#inquiry"
+            onClick={(e) => {
+              e.preventDefault()
+              window.location.hash = 'inquiry'
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              })
+            }}
+            className="bg-white text-green-600 px-10 py-4 rounded-md font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-green-600/30"
+          >
+            {t('inquire_now')}
+          </a>
+        </div>
+      
+      
       {/* Scroll Down Button with adjusted bottom margin */}
       <div className="absolute bottom-4
        left-1/2 transform -translate-x-1/2 z-20 text-center">
