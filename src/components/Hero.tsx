@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
           playsInline
           poster="https://images.unsplash.com/photo-1586624235026-1585ea70b1f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
         >
-          <source src="homehero.mp4" type="video/mp4" />
+          <source src="Homehero.mp4" type="video/mp4" />
           <source src="https://player.vimeo.com/external/368763065.hd.mp4?s=73a9b3c0c4b29e752732c0e9bb63ae7a9a951f7d&profile_id=175" type="video/mp4" />
           <img
             src="https://images.unsplash.com/photo-1586624235026-1585ea70b1f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
